@@ -4,7 +4,19 @@
 
 <h1 class="name-head">JAYSON LEWIS</h1>
 
+@model IEnumerable<Portfolio.Models.Project>
 
+
+
+@foreach (var item in Model)
+{
+    <div>
+        <h4>@item.Title</h4>
+        <div>@item.Description</div>
+
+        <hr />
+    </div>
+}
 
 <div class="row">
     <div class="col-md-4">
